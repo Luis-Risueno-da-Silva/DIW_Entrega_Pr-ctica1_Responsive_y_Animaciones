@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <link rel="shortcut icon"href="../assets/images/mando_ps4.ico"type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/iniciarSesion.css">
+</head>
+<body class="background">
+    
+    <main class="main">
+
+        <!-- Header -->
+        <header class="header" id="ancla-header">
+            <!-- Logo -->
+            <div class="logo__container">
+                <a href="../index.html"><img src="../assets/images/Instant_Play_Logo.png"alt="Logo de Instant Play"class="logo"></a>
+            </div>
+
+            <!-- Nav -->
+            <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list--item"><a href="#" class="nav__list--link">Pc</a></li>
+                <li class="nav__list--item"><a href="#" class="nav__list--link">Playstation</a></li>
+                <li class="nav__list--item"><a href="#" class="nav__list--link">Xbox</a></li>
+                <li class="nav__list--item"><a href="#" class="nav__list--link">Nintendo</a></li>
+                <li class="nav__list--item"><a href="./noticias.html" class="nav__list--link azul">Noticias</a></li>
+            </ul>
+            </nav>
+
+            <!-- iconos -->
+            <div class="iconos__container">
+                <a href="#" class="icono__link"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="./iniciarSesion.html" class="icono__link"><i class="fa-solid fa-user"></i></a>
+                <a href="./contacto.html" class="icono__link"><i class="fa-solid fa-phone"></i></a>
+            </div>
+
+        </header>
+
+        <!-- Formulario -->
+        <div class="form__div">
+
+            <h2>Inicia Sesión</h2>
+            <div class="form__logos">
+                <p><a href="#" class="form__logos--logo google"><i class="fa-brands fa-google"></i></a></p>
+                <p><a href="#" class="form__logos--logo facebook"><i class="fa-brands fa-facebook-f"></i></a></p>
+                <p><a href="#" class="form__logos--logo discord"><i class="fa-brands fa-discord"></i></a></p>
+            </div>
+
+            <p class="separador">O también...</p>
+
+            <!-- Campos del formulario -->
+            <form action="#" method="post" autocomplete="off">
+            
+                <!-- Email de inicio de sesión -->
+                <input class="input" type="email" placeholder="Email" 
+                    name="email__inicio" size="70" maxlength="50" required>
+                
+                <!-- Contraseña de inicio de sesión -->
+                <input class="input" type="password" placeholder="*****"
+                    name="pass__inicio" size="70" required>
+
+                <!-- Botón para enviar los datos -->
+                <input class="btn__submit" type="submit" value="Iniciar Sesión">
+
+            </form>
+
+            <div class="form__enlaces">
+                <p><a href="#" class="form__enlaces--link">¿No tienes una cuenta?</a></p>
+                <p><a href="#" class="form__enlaces--link">¿Has olvidado la contraseña?</a></p>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <article class="footer__text">
+
+                <div class="footer__list--div">
+                    <ul class="footer__list">
+                        <li class="footer__list--li"><a href="#" class="footer__list--link">Términos y condiciones</a></li>
+                        <li class="footer__list--li"><a href="#" class="footer__list--link">Política de privacidad</a></li>
+                        <li class="footer__list--li"><a href="./contacto.html" class="footer__list--link">Contacto</a></li>
+                        <li class="footer__list--li"><a href="#" class="footer__list--link">FAQ</a></li>
+                        <li class="footer__list--li"><a href="#" class="footer__list--link"><i class="fa-solid fa-gift naranja"></i> Canjear una tarjeta relago</a></li>
+                        <li class="footer__list--li"><a href="./noticias.html" class="footer__list--link"><i class="fa-regular fa-newspaper naranja"></i> Descubre las últimas noticias de videojuegos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__icons">
+                    <p><a href="#" class="footer__icons--icon discord"><i class="fa-brands fa-discord"></i></a></p>
+                    <p><a href="#" class="footer__icons--icon twitter"><i class="fa-brands fa-x-twitter"></i></a></p>
+                    <p><a href="#" class="footer__icons--icon instagram"><i class="fa-brands fa-instagram"></i></a></p>
+                    <p><a href="#" class="footer__icons--icon facebook"><i class="fa-brands fa-facebook-f"></i></a></p>
+                </div>
+
+            </article>
+
+            <hr>
+
+            <p class="footer__footer">Copyright © 2023 Instant Play - All rights reserved</p>
+
+        </footer>
+
+
+    </main>
+
+</body>
+</html>

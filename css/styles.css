@@ -1,0 +1,261 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.background{
+    background-color: #272727;
+}
+
+.main{
+    position: relative;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-areas: 
+    "header header"
+    "visor visor"
+    "tendencias tendencias"
+    "trustPanel trustPanel"
+    "suscripcion suscripcion"
+    "footer footer"
+    ;
+}
+
+.naranja{
+    color: #F96C08;
+}
+
+.btn__subir{
+    display: none;
+    position: fixed;
+    text-decoration: none;
+    color: #F96C08;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #101010;
+    border-radius: 50%;
+}
+
+/* ***************************************** */
+
+/* Visor */
+.visor{
+    grid-area: visor;
+    background: url(../assets/images/8863.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.visor:hover{
+    cursor: pointer;
+}
+
+.visor__info{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.visor__info--title{
+    font-size: 3rem;
+    text-shadow: -4px 2px 2px rgba(0,0,0,0.6);
+}
+
+.visor__info--precio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.visor__rebaja{
+    padding: 15px;
+    background-color: #F96C08;
+    border-radius: 50%;
+}
+
+.visor__precio{
+    font-size: 1.5rem;
+    text-shadow: -4px 2px 2px rgba(0,0,0,0.6);
+}
+
+.visor__logo{
+    display: none;
+    width: 200px;
+    height: 200px;
+}
+/* ***************************************************************************** */
+
+/* Tendencias */
+.tendencias{
+    grid-area: tendencias;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 1400px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    color: white;
+}
+
+.tendencias__title{
+    font-size: 2rem;
+}
+
+.tendencias__juegos{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tendencias__container{
+    width: 380px;
+    /* height: 220px; */
+    /* border: 1px solid green; */
+    margin: 20px;
+    position: relative;
+}
+
+.juego__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rebaja{
+    position: absolute;
+    top: 162px;
+    padding: 10px;
+    background-color: #F96C08;
+    border-radius: 10%;
+}
+
+.juego__foto{
+    border-radius: 10%;
+}
+
+.juego__foto:hover{
+    scale: 1.03;
+    transition-duration: 1s;
+}
+
+.logo__consola{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    border-radius: 50%;
+}
+
+/* ******************************************************************************* */
+
+/* trustPanel */
+.trustPanel{
+    grid-area: trustPanel;
+    width: 100%;
+    height: 150px;
+    background-color: #101010;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.trustPanel__apartado{
+    /* width: 20%; */
+    display: flex;
+    flex-direction: row;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* padding-right: 20px; */
+    margin: 1px solid red;
+}
+
+.trustPanel__icono{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.trustPanel__apartado--text{
+    margin-left: 40px;
+}
+
+.trustPanel__title{
+    color: #F96C08;
+    text-decoration: underline;
+}
+
+.trustPanel__subtitle{
+    color: white;
+}
+
+.trustPanel__img{
+    display: none;
+}
+
+/* ********************************************************************** */
+
+/* suscripcion */
+
+.suscripcion{
+    grid-area: suscripcion;
+    width: 100%;
+    background-color: #323232;
+}
+
+.suscripcion__icon{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.suscripcion__text{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 10px;
+}
+
+.suscripcion__text--title{
+    color: white;
+    font-size: 2rem;
+}
+
+.suscripcion__text--subtitle{
+    display: none;
+    color: rgba(255, 255, 255, 0.467);
+    font-size: 1.5rem;
+}
+
+.suscripcion__text--btn{
+    background-color: #F96C08;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 10%;
+}
+
+.suscripcion__text--btn:hover{
+    color: #F96C08;
+    background-color: white;
+    text-decoration: underline;
+    transition-duration: 1s;
+}
+
+/* ********************************************************************* */
+

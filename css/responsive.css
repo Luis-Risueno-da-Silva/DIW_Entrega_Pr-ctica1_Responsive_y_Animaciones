@@ -1,0 +1,111 @@
+
+/* Break point a 425px */
+@media (min-width: 425px){
+
+    .visor__logo{
+        display: block;
+    }
+
+}
+
+/* Break point a 768px */
+@media (min-width: 768px){
+
+    .logo__container{
+        display: block;
+    }
+
+    .iconos__container{
+        display: block;
+    }
+
+    .menu__desplegable{
+        display: none;
+    }
+
+    .trustPanel__img{
+        display: block;
+    }
+
+    .suscripcion__text--subtitle{
+        display: block;
+    }
+
+}
+
+/* Break point a 1024px */
+@media (min-width: 1024px){
+
+    .tendencias__juegos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer__text{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+/* Break point a 1440px */
+@media (min-width: 1440px){
+
+    .main{
+        grid-template-areas: 
+        "header visor"
+        "header visor"
+        "tendencias tendencias"
+        "trustPanel trustPanel"
+        "suscripcion suscripcion"
+        "footer footer"
+        ;
+    }
+
+    .header{
+        /* border: 1px solid red; */
+        position: static;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav__list{
+        /* border: 1px solid red; */
+        margin-right: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__list--item{
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .btn__subir{
+        display: block;
+        animation-name: aparecerFlecha;
+        animation-duration: 2s;
+        
+    }
+
+    @keyframes aparecerFlecha {
+        from{
+            bottom: 100px;
+            rotate: 360deg;
+        }
+        to{
+            bottom: 0;
+            rotate: 0;
+        }
+    }
+
+}

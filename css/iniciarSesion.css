@@ -1,0 +1,113 @@
+.background{
+    background-color: #272727;
+}
+
+.main{
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    z-index: 0;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "header header"
+    "form__div form__div"
+    "footer footer"
+    ;
+}
+
+.logo__container{
+    display: block;
+}
+
+.iconos__container{
+    display: block;
+}
+
+.footer__text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ********************************************************* */
+
+/* Formulario de iniciar sesión */
+.form__div{
+    grid-area: form__div;
+    width: 500px;
+    /* border: 1px solid red; */
+    margin-left: 35%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2{
+    color: white;
+}
+
+.form__logos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form__logos--logo{
+    padding: 10px 30px 10px 30px;
+    border-radius: 10%;
+}
+
+.separador{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    color: white;
+}
+
+.input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #272727;
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.input:focus, .input:active{
+    color: white;
+    border: 1px solid #F96C08;
+}
+
+.btn__submit{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F96C08;
+    border: 0;
+    color: white;
+}
+
+.btn__submit:hover{
+    cursor: pointer;
+}
+
+.form__enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__enlaces--link{
+    text-decoration: none;
+    color: white;
+}
+
+.form__enlaces--link:hover{
+    text-decoration: underline;
+}

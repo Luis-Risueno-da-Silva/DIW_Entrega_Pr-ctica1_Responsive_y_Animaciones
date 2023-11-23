@@ -1,0 +1,72 @@
+.background{
+    background-color: #272727;
+}
+
+.main{
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    z-index: 0;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "header header"
+    "preguntas__frecuentes--section preguntas__frecuentes--section"
+    "footer footer"
+    ;
+}
+
+.logo__container{
+    display: block;
+}
+
+.iconos__container{
+    display: block;
+}
+
+.footer__text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* *************************************************************** */
+
+/* Preguntas frecuentes */
+.preguntas__frecuentes--section{
+    grid-area: preguntas__frecuentes--section;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.preguntas__frecuentes--div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+h2{
+    color: white;
+}
+
+.preguntas__frecuentes--link{
+    color: #F96C08;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.preguntas__frecuentes--link:hover{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    transition-duration: 1s;
+}
+
+
+.preguntas__frecuentes--text{
+    color: rgba(255, 255, 255, 0.733);
+}
